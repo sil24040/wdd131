@@ -1,0 +1,103 @@
+/* General styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: white; /* Light theme background */
+    color: black; /* Light theme text */
+}
+
+div {
+    max-width: 600px;
+    margin: 50px auto;
+    border: solid grey;
+    border-width: 1px;
+    padding: 20px 200px 30px 200px;
+}
+
+header {
+    text-align: center;
+    border-bottom: solid rgb(191, 191, 191) 1px;
+}
+
+#ms {
+    font-size: 52px;
+    letter-spacing: 3px;
+    margin-bottom: -5px;
+}
+
+#byui {
+    color: #006EB6;  /* Default blue */
+    letter-spacing: 3px;
+    margin-bottom: 1px;
+}
+
+main {
+    line-height: 1.5;
+}
+
+/* Add space between paragraphs in the main section */
+main p {
+    margin-bottom: 0.5em; /* Adjust this value as needed */
+}
+
+/* Fix spacing for ordered list */
+ol {
+    padding-left: 40px; /* Adds space between list numbers and text */
+}
+
+ol li {
+    margin-bottom: 1em; /* ✨ Added spacing between list items */
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hide dashes between paragraphs */
+.invisible {
+    display: none;
+}
+
+/* Dark Theme Styles */
+.dark {
+    background-color: #333; /* Dark background */
+    color: white; /* Light text */
+}
+
+.dark #byui {
+    color: #7FD5F2;  /* Lighter blue for better contrast */
+}
+
+.dark h2 {
+    color: #7FD5F2;  /* Lighter blue for better contrast */
+}
+
+footer img {
+    content: url('./byui-logo_white.png'); /* White logo for dark theme */
+}
+
+/* Light Theme Styles */
+body:not(.dark) {
+    background-color: white; /* Light background */
+    color: black; /* Dark text */
+}
+
+#byui {
+    color: #006EB6; /* Blue text in light mode */
+}
+
+footer img {
+    content: url('./byui-logo_blue.webp'); /* Blue logo for light theme */
+}
+
+#theme-selector {
+    display: block;
+    margin: 10px auto;
+}
